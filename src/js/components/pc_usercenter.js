@@ -36,7 +36,7 @@ export default class PCUserCenter extends React.Component{
 						<div className='logo'/>
 						<Menu theme='dark' mode='inline' defaultOpenKeys={['sub1','sub2']} defaultSelectedKeys={[this.state.current]} onClick={this.handleClick.bind(this)} style={{ height: '100%' }}>
 							<SubMenu key='sub1' title={<span><Icon type='user'/>基本信息</span>}>
-								<Menu.Item key='1'>安全中心</Menu.Item>
+								<Menu.Item key='1'><Link to={'/userInfo'}>信息表</Link></Menu.Item>
 								<Menu.Item key='2'><Link to={'/userUpload'}>上传头像</Link></Menu.Item>
 							</SubMenu>
 							<SubMenu key='sub2' title={<span><Icon type='video-camera'/>我的足迹</span>}>

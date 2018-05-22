@@ -1,0 +1,6 @@
+{
+"arr":[
+  {"id":1,"name":"chenbin","city":"hebei","sex":"女"},
+  {"id":2,"name":"xuexue","city":"nanyang","sex":"男"},
+  {"id":3,"name":"dongge","city":"beijing","sex":"女"}
+]}

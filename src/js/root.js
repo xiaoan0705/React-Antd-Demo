@@ -9,7 +9,7 @@ import PCCenter from './components/pc_center';
 import PCUserCenter from './components/pc_usercenter';
 import PCUserCanvas from './components/pc_user_canvas';
 import PCUserLoad from './components/pc_user_upload';
-
+import PCUserInfo from './components/pc_user_info';
 import 'antd/dist/antd.css';
 
 
@@ -24,6 +24,7 @@ export default class Root extends React.Component {
 						<Route path="/details/:uniquekey" component={PCNewsDetails}></Route>
 						<Route path='/personCenter' component={PCCenter}></Route>
 						<Route path='/usercenter' component={PCUserCenter}>
+							<Route path='/userInfo' component={PCUserInfo}></Route>
 							<Route path='/userCanvas' component={PCUserCanvas}></Route>
 							<Route path='/userUpload' component={PCUserLoad}></Route>
 						</Route>

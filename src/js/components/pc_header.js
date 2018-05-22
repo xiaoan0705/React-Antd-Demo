@@ -84,7 +84,7 @@ class PCHeader extends React.Component{
 	
 	render(){
 		let {getFieldProps} = this.props.form;
-		//判断是否登录
+		
 		const userShow=this.state.hasLogined
 		?<Menu.Item key="logout" className="register">
 			<Button type="primary" htmlType="button">{this.state.userNickName}</Button>
@@ -145,7 +145,7 @@ class PCHeader extends React.Component{
       						</Menu.Item>
       					</Menu>
       					
-      					//模态框，弹框显示注册和登录功能
+      				
 						<Modal title="用户中心" wrapClassName="vertical-center-modal" visible={this.state.modalVisible}
 								onOk={() => this.setModalVisible(false)} okText="关闭" onCancel={()=>this.setModalVisible(false)}>
 							<Tabs type="card">
